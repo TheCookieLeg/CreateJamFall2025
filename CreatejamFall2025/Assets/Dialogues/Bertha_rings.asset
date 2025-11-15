@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2545961c6e9602b4b8cdd85e85d9ea3f, type: 3}
+  m_Name: Bertha_rings
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: Oh, hey there young one! What a nice business you run here. Oh,
+      you don't know who I am? I am the one who is pulling all the threads. The head
+      of all mafia bosses. Let's see if you deserve a piece of hard candy.
+    responses:
+    - responseText: 
+      nextNode:
+        dialogueText: Oh, I remember this emblem and the favor I would do if I ever
+          got to see it. An eternal debt to the one who wears it. Sorry young one,
+          you will stay in this businnes for a long time. No hard candy for you.
+        responses:
+        - responseText: Nooooo
+          nextNode:
+            dialogueText: 
+            responses: []
+    - responseText: 
+      nextNode:
+        dialogueText: 'Oh, I remember this emblem and the favor I would do if I ever
+          got to see it. A well paid job in the top of the food chain. Mildred will
+          be happy to have you under her wing. Here, my dear, a piece of hard candy
+          for you. '
+        responses:
+        - responseText: Cool!
+          nextNode:
+            dialogueText: 
+            responses: []
+    - responseText: Show the lion ring
+      nextNode:
+        dialogueText: Oh my! I gave that ring to Christine a long time ago. If she
+          gave it to you, then that means you're family now! Don't worry about your
+          debt dear. You're now the head of the mafia. You will get all the hard
+          candy that you want.
+        responses:
+        - responseText: Aw hell yeah!
+          nextNode:
+            dialogueText: 
+            responses: []

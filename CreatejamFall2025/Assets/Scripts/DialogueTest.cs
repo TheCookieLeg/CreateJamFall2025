@@ -2,9 +2,8 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueTest : MonoBehaviour
 {
     
     [SerializeField] private Button dialogueButton;

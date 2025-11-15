@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2545961c6e9602b4b8cdd85e85d9ea3f, type: 3}
+  m_Name: Alfonzo_1
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: Hey, kid! Remember our deal! Sell drugs to pay back your debt. 
+      I also need you to do some favors for me, kid.
+    responses:
+    - responseText: Next
+      nextNode:
+        dialogueText: Give this to William and DO NOT open it. I will know if you
+          did. Also I need to get rid of that damn Mildred. She's trying to expand
+          her business with MY drugs. So take this and take care of it.
+        responses:
+        - responseText: Next
+          nextNode:
+            dialogueText: Lastly, Christine owes me a lot of money. I'm tired of
+              listening to her crying. You make her pay up! Got that, kid? Check
+              your notebook if you forget the favors. Now get to work!
+            responses:
+            - responseText: Got it boss!
+              nextNode:
+                dialogueText: 
+                responses: []

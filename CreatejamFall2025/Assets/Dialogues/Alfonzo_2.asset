@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2545961c6e9602b4b8cdd85e85d9ea3f, type: 3}
+  m_Name: Alfonzo_2
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: "I knew you would stay loyal, kid. Finally, that damn Mildred is
+      done for!\LYou ain't too bad at this, kid. I wish you could work for me forever,
+      haha. "
+    responses:
+    - responseText: Next
+      nextNode:
+        dialogueText: But of course you will be free after you pay your debt, ha
+          ha.  Take this as a thanks, kid. Stay loyal and keep selling!
+        responses:
+        - responseText: Take favor
+          nextNode:
+            dialogueText: 
+            responses: []
