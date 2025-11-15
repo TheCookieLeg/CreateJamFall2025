@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2545961c6e9602b4b8cdd85e85d9ea3f, type: 3}
+  m_Name: Christine
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: '*crying* Oh, hi. I just need my car washed, please.'
+    responses:
+    - responseText: Just wash her car
+      nextNode:
+        dialogueText: '*crying* Thank you, have a nice day.'
+        responses:
+        - responseText: See ya
+          nextNode:
+            dialogueText: 
+            responses: []
+    - responseText: Extort the crying woman
+      nextNode:
+        dialogueText: '*crying* Oh no, you work for him!? Please, I don''t have the
+          money right now. I had to buy medicin for my sick child. Please don''t
+          do this, I beg you.'
+        responses:
+        - responseText: Force her to give you money
+          nextNode:
+            dialogueText: '*crying* Fine, but this is all I have. Take it. This will
+              have consequences!'
+            responses:
+            - responseText: Okay
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: Let her go
+          nextNode:
+            dialogueText: Oh, thank you so much! You won't regret this! Here, take
+              this.
+            responses:
+            - responseText: Take favor
+              nextNode:
+                dialogueText: 
+                responses: []

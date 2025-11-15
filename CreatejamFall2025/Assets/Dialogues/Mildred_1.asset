@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2545961c6e9602b4b8cdd85e85d9ea3f, type: 3}
+  m_Name: Mildred_1
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: You know who I am, right? I'm here to buy a package. He's such
+      a fool, thinking I don't know about his plans. If you do me a favor and get
+      rid of that spider, Alfonzo, I promise you that it will benefit you in the
+      future!
+    responses:
+    - responseText: Plant bomb
+      nextNode:
+        dialogueText: 
+        responses: []
+    - responseText: Do her a favor
+      nextNode:
+        dialogueText: Good choice, buddy. I'll see you later. Here, take this.
+        responses:
+        - responseText: Take favor
+          nextNode:
+            dialogueText: 
+            responses: []

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2545961c6e9602b4b8cdd85e85d9ea3f, type: 3}
+  m_Name: Tony
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  RootNode:
+    dialogueText: 'Sup, brah! Heard you got the good stuff, brah. Saved up a couple
+      of thousand. That''s enough, right? '
+    responses:
+    - responseText: Do not sell him drugs
+      nextNode:
+        dialogueText: Aw, come on, man! Bummer... I promised the boys a good time.
+          Please, brah. What about 5000$? I'll even throw in a favor! I needs this,
+          brah.
+        responses:
+        - responseText: Do not sell him drugs
+          nextNode:
+            dialogueText: Aaaw, the boys wil hate me now.
+            responses:
+            - responseText: next
+              nextNode:
+                dialogueText: 
+                responses: []
+        - responseText: 'Sell him drugs '
+          nextNode:
+            dialogueText: Aw, hell yeah, brah! You're the GOAT. Here take this and
+              use it wisely! It's a powerful trick.
+            responses:
+            - responseText: Take favor
+              nextNode:
+                dialogueText: 
+                responses: []
