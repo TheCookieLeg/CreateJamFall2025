@@ -50,9 +50,9 @@ MonoBehaviour:
                     dialogueText: 
                     responses: []
                   favorTask: alfonzo jail
-                  condition: William tip
+                  condition: 
               favorTask: 
-              condition: Out alfonzo
+              condition: William tip
             - responseText: Sell out Mildred
               nextNode:
                 dialogueText: I got your back
