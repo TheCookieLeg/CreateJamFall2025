@@ -45,6 +45,11 @@ public class SpawnCustomer : MonoBehaviour
             dialogueList[2] = null;
             dialogueList[7] = null;
         }
+
+        if (!DialogueManager.Instance.favorList.Contains("Extorded") && currentCustomer > 8)
+        {
+            dialogueList[10] = null;
+        }
         if (dialogueList[currentCustomer] != null)
         {
             car = Instantiate(customerList[currentCustomer]);
