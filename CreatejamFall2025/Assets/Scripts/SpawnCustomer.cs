@@ -10,6 +10,7 @@ public class SpawnCustomer : MonoBehaviour
     private GameObject car;
     private CustomerBehaviour customerBehaviour;
     //[SerializeField] private Transform spawnPos;
+    [SerializeField] private AudioClip carNoise;
 
     public static SpawnCustomer instance; //Create singleton of script
     void Awake() 
@@ -56,6 +57,7 @@ public class SpawnCustomer : MonoBehaviour
             customerBehaviour = car.GetComponent<CustomerBehaviour>();
             customerBehaviour.dialogue = dialogueList[currentCustomer];
             customerBehaviour.name = nameList[currentCustomer];
+            SoundFXManager.instance.PlaySoundFX(carNoise, car.transform, 1f);
         }
         else
         {
