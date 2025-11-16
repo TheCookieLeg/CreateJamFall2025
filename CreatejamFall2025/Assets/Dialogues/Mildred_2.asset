@@ -21,7 +21,7 @@ MonoBehaviour:
         dialogueText: You know what, take this, buddy. It might do you some good
           and get you a job worth doing.
         responses:
-        - responseText: Take favor
+        - responseText: Take wolf ring
           nextNode:
             dialogueText: 
             responses: []

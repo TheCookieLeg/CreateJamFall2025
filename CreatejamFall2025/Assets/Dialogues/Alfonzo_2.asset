@@ -20,9 +20,9 @@ MonoBehaviour:
     - responseText: Next
       nextNode:
         dialogueText: But of course you will be free after you pay your debt, ha
-          ha.  Take this as a thanks, kid. Stay loyal and keep selling!
+          ha.  Take this favor as a thanks, kid. Stay loyal and keep selling!
         responses:
-        - responseText: Take favor
+        - responseText: Take spider ring
           nextNode:
             dialogueText: 
             responses: []

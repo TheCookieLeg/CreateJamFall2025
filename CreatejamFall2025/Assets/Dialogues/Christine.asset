@@ -49,7 +49,7 @@ MonoBehaviour:
         - responseText: Let her go
           nextNode:
             dialogueText: Oh, thank you so much! You won't regret this! Here, take
-              this.
+              this lion ring.
             responses:
             - responseText: Take favor
               nextNode:

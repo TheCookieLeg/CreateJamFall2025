@@ -17,7 +17,7 @@ MonoBehaviour:
       you don't know who I am? I am the one who is pulling all the threads. The head
       of all mafia bosses. Let's see if you deserve a piece of hard candy.
     responses:
-    - responseText: 
+    - responseText: Show spider
       nextNode:
         dialogueText: Oh, I remember this emblem and the favor I would do if I ever
           got to see it. An eternal debt to the one who wears it. Sorry young one,
@@ -31,7 +31,7 @@ MonoBehaviour:
           condition: 
       favorTask: 
       condition: spider ring
-    - responseText: 
+    - responseText: Give wolf ring
       nextNode:
         dialogueText: 'Oh, I remember this emblem and the favor I would do if I ever
           got to see it. A well paid job in the top of the food chain. Mildred will
