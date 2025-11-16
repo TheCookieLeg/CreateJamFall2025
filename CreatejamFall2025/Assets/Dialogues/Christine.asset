@@ -23,6 +23,10 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: 
+      condition: 
     - responseText: Extort the crying woman
       nextNode:
         dialogueText: '*crying* Oh no, you work for him!? Please, I don''t have the
@@ -38,6 +42,10 @@ MonoBehaviour:
               nextNode:
                 dialogueText: 
                 responses: []
+              favorTask: Extorded
+              condition: 
+          favorTask: 
+          condition: 
         - responseText: Let her go
           nextNode:
             dialogueText: Oh, thank you so much! You won't regret this! Here, take
@@ -47,3 +55,9 @@ MonoBehaviour:
               nextNode:
                 dialogueText: 
                 responses: []
+              favorTask: 
+              condition: 
+          favorTask: Lion ring
+          condition: 
+      favorTask: 
+      condition: 

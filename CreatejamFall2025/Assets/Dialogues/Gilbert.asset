@@ -30,6 +30,10 @@ MonoBehaviour:
               nextNode:
                 dialogueText: 
                 responses: []
+              favorTask: 
+              condition: 
+          favorTask: 
+          condition: 
         - responseText: Sell him drugs
           nextNode:
             dialogueText: GOT YA! I'm a cop, you fool. I knew there was a dirty business
@@ -45,6 +49,10 @@ MonoBehaviour:
                   nextNode:
                     dialogueText: 
                     responses: []
+                  favorTask: alfonzo jail
+                  condition: William tip
+              favorTask: 
+              condition: Out alfonzo
             - responseText: Sell out Mildred
               nextNode:
                 dialogueText: I got your back
@@ -53,3 +61,11 @@ MonoBehaviour:
                   nextNode:
                     dialogueText: 
                     responses: []
+                  favorTask: 
+                  condition: 
+              favorTask: mildred jail
+              condition: 
+          favorTask: 
+          condition: 
+      favorTask: 
+      condition: 

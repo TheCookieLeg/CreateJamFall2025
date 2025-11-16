@@ -26,3 +26,7 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: spider ring
+          condition: 
+      favorTask: 
+      condition: 

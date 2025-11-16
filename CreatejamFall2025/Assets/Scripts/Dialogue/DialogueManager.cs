@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using System.Threading;
 using TMPro;
 using UnityEngine;
@@ -6,7 +8,8 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
- 
+
+    public List<string> favorList = new List<string>();
     // UI references
     public GameObject DialogueParent; // Main container for dialogue UI
     public TextMeshProUGUI DialogTitleText, DialogBodyText; // Text components for title and body
@@ -48,17 +51,26 @@ public class DialogueManager : MonoBehaviour
         // Create and setup response buttons based on current dialogue node
         foreach (DialogueResponse response in node.responses)
         {
-            GameObject buttonObj = Instantiate(responseButtonPrefab, responseButtonContainer);
-            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
- 
-            // Setup button to trigger SelectResponse when clicked
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title));
+            if (!favorList.Contains(response.condition))
+            {
+                GameObject buttonObj = Instantiate(responseButtonPrefab, responseButtonContainer);
+                buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
+
+                // Setup button to trigger SelectResponse when clicked
+                buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title));
+            }
         }
     }
  
     // Handles response selection and triggers next dialogue node
     public void SelectResponse(DialogueResponse response, string title)
     {
+        
+        if (response.favorTask != "")
+        {
+            favorList.Add(response.favorTask);
+            Debug.Log("added");
+        }
         // Check if there's a follow-up node
         if (!response.nextNode.IsLastNode())
         {
@@ -66,6 +78,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("lastnode");
             // If no follow-up node, end the dialogue
             HideDialogue();
         }

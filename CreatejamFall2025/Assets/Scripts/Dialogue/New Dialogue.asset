@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2545961c6e9602b4b8cdd85e85d9ea3f, type: 3}
-  m_Name: Alfonzo_alt
+  m_Name: New Dialogue
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   RootNode:
-    dialogueText: Hey kid, you did the thing, right? It will cost you if you didn't.
-      Oh well, see you around kid. Stay loyal and keep selling.
+    dialogueText: 
     responses:
-    - responseText: Piss
+    - responseText: 
       nextNode:
         dialogueText: 
         responses: []
-      favorTask: 
-      condition: 

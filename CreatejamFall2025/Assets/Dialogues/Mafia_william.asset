@@ -25,6 +25,10 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: 
+      condition: no william letter
     - responseText: Give him the letter
       nextNode:
         dialogueText: Give it here! About time he paid me back, that good for nothing!
@@ -35,3 +39,7 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: William tip
+      condition: william letter

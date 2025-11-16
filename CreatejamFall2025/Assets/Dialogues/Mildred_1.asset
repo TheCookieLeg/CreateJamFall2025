@@ -22,6 +22,8 @@ MonoBehaviour:
       nextNode:
         dialogueText: 
         responses: []
+      favorTask: Dead mildred
+      condition: 
     - responseText: Do her a favor
       nextNode:
         dialogueText: Good choice, buddy. I'll see you later. Here, take this.
@@ -30,3 +32,7 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: Out alfonzo
+      condition: 

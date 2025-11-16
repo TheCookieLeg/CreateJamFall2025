@@ -27,6 +27,10 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: 
+      condition: spider ring
     - responseText: 
       nextNode:
         dialogueText: 'Oh, I remember this emblem and the favor I would do if I ever
@@ -38,6 +42,10 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: 
+      condition: wolf ring
     - responseText: Show the lion ring
       nextNode:
         dialogueText: Oh my! I gave that ring to Christine a long time ago. If she
@@ -49,3 +57,7 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: 
+      condition: Lion ring

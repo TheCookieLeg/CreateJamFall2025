@@ -30,6 +30,10 @@ MonoBehaviour:
               nextNode:
                 dialogueText: 
                 responses: []
+              favorTask: 
+              condition: 
+          favorTask: 
+          condition: 
         - responseText: 'Sell him drugs '
           nextNode:
             dialogueText: Aw, hell yeah, brah! You're the GOAT. Here take this and
@@ -39,3 +43,9 @@ MonoBehaviour:
               nextNode:
                 dialogueText: 
                 responses: []
+              favorTask: Trick
+              condition: 
+          favorTask: 
+          condition: 
+      favorTask: 
+      condition: 

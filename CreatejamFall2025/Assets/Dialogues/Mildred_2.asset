@@ -25,3 +25,7 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: wolf ring
+          condition: 
+      favorTask: 
+      condition: 

@@ -25,6 +25,10 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: william letter
+      condition: 
     - responseText: Do not give him the letter
       nextNode:
         dialogueText: I guess, I'm off then. Off to work another terrible shift at
@@ -34,3 +38,7 @@ MonoBehaviour:
           nextNode:
             dialogueText: 
             responses: []
+          favorTask: 
+          condition: 
+      favorTask: no william letter
+      condition: 

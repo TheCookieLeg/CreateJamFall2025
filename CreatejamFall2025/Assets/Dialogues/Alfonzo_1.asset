@@ -32,3 +32,9 @@ MonoBehaviour:
               nextNode:
                 dialogueText: 
                 responses: []
+              favorTask: Extort Christine
+              condition: 
+          favorTask: Give letter to william,Get rid of mildred
+          condition: 
+      favorTask: 
+      condition: 
