@@ -23,8 +23,26 @@ MonoBehaviour:
         responses:
         - responseText: Shit
           nextNode:
-            dialogueText: 
-            responses: []
+            dialogueText: Why are you just standing there?
+            responses:
+            - responseText: Show trick
+              nextNode:
+                dialogueText: Quit that! dont play me for a fool
+                responses:
+                - responseText: Movin on
+                  nextNode:
+                    dialogueText: 
+                    responses: []
+                  favorTask: 
+                  condition: 
+              favorTask: 
+              condition: Trick
+            - responseText: Do nothing
+              nextNode:
+                dialogueText: 
+                responses: []
+              favorTask: 
+              condition: Trick
           favorTask: 
           condition: 
       favorTask: 
