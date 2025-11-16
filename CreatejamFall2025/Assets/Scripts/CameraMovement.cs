@@ -15,6 +15,8 @@ public class CameraMovement : MonoBehaviour
     [Tooltip("Changes how fast the camera moves between points.\nThe higher the slower")]
     [SerializeField] private float moveDuration = 0.6f;
 
+    [SerializeField] private AudioClip[] footsteps;
+
     private Coroutine _currentCoroutine;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,6 +45,7 @@ public class CameraMovement : MonoBehaviour
         {
             Debug.Log("Coroutine starts");
             _currentCoroutine = StartCoroutine(MoveCamera(dir));
+            StartCoroutine(FootstepSound());
         }
         
     }
@@ -67,4 +70,17 @@ public class CameraMovement : MonoBehaviour
         perlinNoise.enabled = false;
     }
 
+    IEnumerator FootstepSound()
+    {
+        float elapsed = 0f;
+
+        while (_currentCoroutine != null)
+        {
+            elapsed += Time.deltaTime;
+            SoundFXManager.instance.PlayRandomSoundFX(footsteps, transform, 1f);
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        
+    }
 }
